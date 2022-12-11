@@ -1,2 +1,2 @@
 #!/bin/bash
-cat list | uniq -u
+echo "Apple\nBanana\nBanana\nCar" >  list | sort | uniq -u
