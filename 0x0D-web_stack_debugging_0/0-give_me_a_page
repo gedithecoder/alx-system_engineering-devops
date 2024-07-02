@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Connects to server 35.172.230.83 with key in ~/.ssh/school
+# run apache on designated container
 
-ssh -i ~/.ssh/school ubuntu@35.172.230.83
+echo "ServerName localhost" >> /etc/apache2.conf
+service apache2 start
